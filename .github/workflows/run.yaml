@@ -1,0 +1,8 @@
+name: flow01
+on: [push]
+jobs:
+	job01:
+		runs-on: ubuntu-latest
+		steps:
+			- run: echo "hello world"
+	
