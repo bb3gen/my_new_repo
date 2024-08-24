@@ -2,8 +2,10 @@ name: flow01
 on: push
 
 jobs:
-  build:
+  job01:
     runs-on: ubuntu-latest
     steps:
-      - name: First Message
-        run: echo "hello world"
+      - name: Start Message
+        run: echo "Start!"
+      - name: Finish Message
+        run: echo "Finish!"
