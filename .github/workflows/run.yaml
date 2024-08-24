@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: Start Message
         run: echo "Start!"
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v2
       - run:
           ls -al
           cd .github/workflows/
