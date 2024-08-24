@@ -1,12 +1,13 @@
-name: flow01
+name: flow_1
 on: push
-
+env:
+  env_1: bb3gen
 jobs:
-  job01:
+  job_1:
     runs-on: ubuntu-latest
     steps:
       - name: Start Message
-        run: echo "Start!"
+        run: echo "Start! ${{ env.env_1 }}"
       - uses: actions/checkout@v4
       - run: |
           ls -al
