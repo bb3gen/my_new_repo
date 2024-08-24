@@ -14,4 +14,7 @@ jobs:
           cd .github/workflows/
           ls -al
       - name: Finish Message
-        run: echo "Finish!"
+        run: |
+          echo "Finish! $RUN_ENV"
+        env:
+          RUN_ENV: taro
